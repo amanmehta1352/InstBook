@@ -1,0 +1,16 @@
+{
+  "name": "InstBook - Personal Master TestBook",
+  "short_name": "InstBook",
+  "description": "Personal Master TestBook PWA for study, PYQ practice, revision and performance tracking.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0d12",
+  "theme_color": "#0b0d12",
+  "lang": "en-IN",
+  "categories": [
+    "education",
+    "productivity"
+  ]
+}
