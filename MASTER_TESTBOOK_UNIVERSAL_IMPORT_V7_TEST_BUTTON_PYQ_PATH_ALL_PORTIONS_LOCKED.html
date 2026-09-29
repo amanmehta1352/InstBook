@@ -1,5 +1,8 @@
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0b0d12">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -6540,5 +6543,19 @@ window.openImport=renderImportV7;
   window.__MASTER_TEST_BUTTON_PYQ_PATH_STATUS__='PATH_ADDED_ONLY';
 })();
 </script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(registration => {
+        console.log('Service Worker registered:', registration.scope);
+      })
+      .catch(error => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}
+</script>
+
 </body>
 </html>
